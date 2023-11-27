@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contactez-moi</title>
+</head>
+<body>
+
+    <div class="container">
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Objet:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="reason">Raison:</label>
+            <select id="reason" name="reason" required>
+                <option value="stage">Offre de stage</option>
+                <option value="alternance">Offre d'alternance</option>
+                <option value="emploi">Offre d'emploi</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="button" onclick="sendEmail()">Envoyer</button>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
